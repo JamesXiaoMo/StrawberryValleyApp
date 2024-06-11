@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {View, Image, StyleSheet, Dimensions} from 'react-native';
-import {TextInput, Text, Button, Provider, Portal, Dialog, Icon} from "react-native-paper";
+import {TextInput, Text, Button, Provider, Portal, Dialog} from "react-native-paper";
 
 const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
@@ -10,7 +10,6 @@ export default function LoginScreen({ navigation }) {
     const [password, setPassword] = useState('');
     const [PasswordSecureTextEntry, setPasswordSecureTextEntry] = useState(true);
     const [dialog_name_err_visible, set_dialog_name_err_visible] = useState(false);
-
 
     return (
         <Provider>
